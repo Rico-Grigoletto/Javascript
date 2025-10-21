@@ -13,6 +13,12 @@ app.use(express.urlencoded({ extended: true }));
 const indexRoutes = require('./routes/index');
 app.use('/', indexRoutes);
 
+//rota clientes
+
+const clientesRoutes = require('./routes/clientes');
+app.use('/clientes', clientesRoutes);
+
+
 const usuariosRoutes = require('./routes/usuarios');
 app.use('/usuarios', usuariosRoutes);
 

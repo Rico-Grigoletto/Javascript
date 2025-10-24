@@ -10,10 +10,11 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 // Rotas
+
+
 const indexRoutes = require('./routes/index');
 app.use('/', indexRoutes);
 
-//rota clientes
 
 const clientesRoutes = require('./routes/clientes');
 app.use('/clientes', clientesRoutes);
